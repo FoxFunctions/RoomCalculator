@@ -16,8 +16,37 @@ namespace RoomCalculator
                 {
                     Console.WriteLine("What is the Length of the room?");
                     roomLength = double.Parse(Console.ReadLine());
+                    
+                   
+                    break;
+                }
+                catch
+                {
+                    Console.WriteLine("Sorry, that is not a valid input. Please enter a number value");
+                    continue;
+                }
+            }
+
+            while (true)
+            {
+                try
+                {
                     Console.WriteLine("What is the width of the room?");
                     roomWidth = double.Parse(Console.ReadLine());
+                    break;
+                }
+                catch
+
+                {
+                    Console.WriteLine("Sorry, that is not a valid input. Please enter a number value");
+                    continue;
+                }
+            }
+
+            while (true)
+            {
+                try
+                {
                     Console.WriteLine("What is the height of the room?");
                     roomHeight = double.Parse(Console.ReadLine());
                     break;
